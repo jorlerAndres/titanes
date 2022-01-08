@@ -255,4 +255,54 @@
    height: 400px;
    border-radius: 15px;
    box-shadow: 0 0 15px 1px rgb(209, 208, 208);
+  
+   opacity: 0;
+   transition: all 15s;
+}
+.movement{
+  opacity: 1;
+  -webkit-animation: moveFromRight 300ms ease-in-out;
+  -moz-animation: moveFromRight 300ms ease-in-out;
+  -ms-animation: moveFromRight 300ms ease-in-out;
+  -o-animation: moveFromRight 300ms ease-in-out;
+  animation: moveFromRight 300ms ease-in-out;
+}
+
+
+@-webkit-keyframes moveFromRight {
+  from {
+      opacity: 0;
+      -webkit-transform: translateX(-200%);
+      -moz-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      -o-transform: translateX(-200%);
+      transform: translateX(-200%);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transform: translateX(0%);
+  }
+}
+
+/*edicion input*/
+
+.input-edicion{
+
+  outline: none;
+  border:none;
+  border-bottom: 1px solid rgb(3, 184, 3);
+  background-color: transparent;
+}
+.modal-efect-body{
+  background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+}
+.modal-efect-header{
+  background-color: rgb(255, 255, 255);
+}
+.modal-title{
+  color: #ff915e;
 }

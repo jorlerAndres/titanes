@@ -1,4 +1,7 @@
+<?php
+echo "hh";
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +66,7 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuPrincipal">
                     <li>
                       <a class="dropdown-item" href="/logout">
-                        <img src="" alt="" width="16"
+                        <img src="{{base_url}}/assets/imagenes/iconos/cerrar_sesion_azul.svg" alt="" width="16"
                           class="mx-2">
                         Cerrar sesión
                       </a>
@@ -102,7 +105,7 @@
             <div class="contenedor-body">
               <div>
                  <!-- 1 -->
-                <div class="tarjeta-participante mt-2"  id='primer' >
+                <div class="tarjeta-participante mt-2" >
                   <div class="card-body">
                     <div class="d-flex flex-row">
 
@@ -119,8 +122,7 @@
                       </div>
                       <h6 class="card-subtitle mb-2 mt-3 ms-5 text-muted ciudad-participante">Cali</h6>
                     <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text to</p>
-                    <button class="ms-5 mt-3 editar-participante" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
-                    
+                    <button class="ms-5 mt-3 editar-participante">Editar</button>
                     </div>
                     
                    <!-- <button class="inactivar-participante">Inactivar</button> -->
@@ -163,7 +165,7 @@
                       </div>
                       <h6 class="card-subtitle mb-2 mt-3 ms-5 text-muted ciudad-participante">Buenaventura</h6>
                       <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text to</p>
-                      <button class="ms-5 mt-3 editar-participante " data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
+                      <button class="ms-5 mt-3 editar-participante">Editar</button>
                     </div>
                     
                    <!-- <button class="inactivar-participante">Inactivar</button> -->
@@ -176,66 +178,13 @@
              
           </div>
           <div class="col-md-3">
-            <div class="contenedor-datos-participante" id='contenedor_participante'>
-              <div class="d-flex flex-row">
-                <img src="./usuario_blanco.jpg"  class="mt-2 ms-1" width="70" height="70">
-                <div class="d-flex flex-column mt-3">
-                  <span class="dato-cedula fs-3 ">1123446</span>
-                  <span class="dato-nombre ">Buenaventura</span>
-                </div>
-              </div>
-              <div>
-                <h4 class="mt-2 ms-3">Gustavo cuellar</h4>
-                <span class="mt-3 ms-3"> ochoa.j@proimpo.com</span>
-                <div class="mt-4 ms-3">
-                  <span class="fw-bold">Telefono:</span><span class="">311623222</span><br>
-                  <span class="fw-bold">Direccion:</span><span class="">cl 4-3433</span>
-                </div>
-               
-              </div>
-               
-                
-            </div>
-          </div>
+            <div class="contenedor-datos-participante">
 
-          <!-- Modal -->
-         
-          
-          <!-- Modal -->
-          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content ">
-                <div class="modal-header modal-efect-header">
-                  <h5 class="modal-title" id="exampleModalLabel">TITÁN</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body   modal-efect-body">
-                  <form id="formulario_usuario">
-                    <div class="row">
-                      <div class="col-md-12 mb-3 ms-4">
-                        <input type="hidden"  id="id_usuario" name="id_usuario" >
-                          <label for="nombres" class="form-label">Nombres</label>
-                          <input type="text"  class="input-edicion" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
-                        <div id="texto_nombres" class="form-text me-3">Primer y segundo nombre.</div>
-                      
-                          <label for="apellidos" class="form-label">apellidos</label>
-                          <input type="text"  class="input-edicion me-3" id="apellidos_usuario" name="apellidos_usuario">
-                        </div>
-                     </div>
-                    
-                      <button type="submit" class="btn btn-primary ms-4" >Guardar</button>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
           </div>
-          <!-- Modal -->
+         
         </div>
       </div>
-      <script src="./home.js"></script>
+      <script src="{{base_url}}/scripts/home.js"></script>
 </body>
 </html>
