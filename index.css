@@ -234,8 +234,15 @@
   background: linear-gradient(rgb(32, 32, 32),rgb(124, 123, 123));
   -webkit-background-clip: text;
   color: transparent;  
-
 }
+
+.titan-text{
+  background: linear-gradient(rgb(32, 32, 32),rgb(124, 123, 123));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgb(131, 247, 108);
+}
+
 .nombre-participante{
 
   width: 200px;
@@ -254,7 +261,7 @@
    background-color: #f1f3f1;
    height: 400px;
    border-radius: 15px;
-   box-shadow: 0 0 15px 1px rgb(209, 208, 208);
+   box-shadow: 0 0 15px 1px rgb(208, 209, 208);
   
    opacity: 0;
    transition: all 15s;
@@ -294,11 +301,24 @@
 
   outline: none;
   border:none;
-  border-bottom: 1px solid rgb(3, 184, 3);
-  background-color: transparent;
+ /*  border-bottom: 1px solid rgb(3, 184, 3); */
+  background-color: white;
+ /*  text-align: center; */
+  box-shadow: 0px 0px 9px 1px rgb(119, 118, 118);
+  border-radius: 2px;
+  color: #909190;
+  font-size: 14px;
+  padding-left: 5px;
+  
+ 
 }
-.modal-efect-body{
-  background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+
+.dato-direccion{
+  border-bottom: 3px solid green;
+  width: 100px;
+}
+.modal-content{
+  background-image: url("./pared.jpg");
 }
 .modal-efect-header{
   background-color: rgb(255, 255, 255);
