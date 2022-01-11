@@ -106,19 +106,19 @@
                   <div class="card-body">
                     <div class="d-flex flex-row">
 
-                      <span id="fecha-participante" class="card-title"> 23</span>
+                      <span  class="monserrat-text ms-1"> 23</span>
                       <div>
-                        <span class="card-subtitle ms-1">enero</span>
-                        <span class="card-subtitle ms-1" style="font-size: 10px;">2021</span>
+                        <span class="fecha-participante ms-1">Enero</span>
+                        <span class="fecha-participante ms-1" style="font-size: 10px;">2021</span>
                       </div>
                       
   
                       <div class="d-flex flex-column nombre-participante">
-                        <h5 class=" ms-3 card-title">da rt</h5>
+                        <h5 class=" ms-3 card-title">David Ruales</h5>
                         <h6 class="ms-3 card-subtitle mb-2 text-muted">1112323222</h6>
                       </div>
                       <h6 class="card-subtitle mb-2 mt-3 ms-5 text-muted ciudad-participante">Cali</h6>
-                    <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text</p>
+                    <p class="card-text ms-4 mt-1 distribuidora-participante">Some quick example text</p>
                     <button class="ms-5 mt-3 editar-participante"  onclick="abrirModal()">Editar</button>
                     
                     </div>
@@ -130,8 +130,7 @@
                  <div class="tarjeta-participante mt-2" >
                   <div class="card-body">
                     <div class="d-flex flex-row">
-                      <span id="fecha-participante" class="card-title"> 23</span>
-                      <span class="card-subtitle">enero</span>
+                      
   
                       <div class="d-flex flex-column nombre-participante">
                         <h5 class=" ms-3 card-title">Gustavo fernandez</h5>
@@ -151,12 +150,7 @@
                  <div class="tarjeta-participante mt-2">
                   <div class="card-body">
                     <div class="d-flex flex-row">
-                      <div>
-                        <span id="fecha-participante" class="card-title"> 23</span>
-                        <span class="card-subtitle">enero</span>
-                      </div>
-                     
-                     
+                    
                       <div class="d-flex flex-column nombre-participante">
                         <h5 class=" ms-3 card-title">Jorge Salcedo</h5>
                         <h6 class="ms-3 card-subtitle mb-2 text-muted">1112323222</h6>
@@ -177,12 +171,12 @@
           </div>
           <div class="col-md-3">
             <div class="contenedor-datos-participante" id='contenedor_participante'>
-              <h6 class="pt-2 ms-3 mb-2  fw-bold titan-text">TITAN</h6>
+              <h6 class="pt-2 ms-3 mb-2  fw-bold titan-text">TITÁN</h6>
               <div class="d-flex flex-row">
-                <img src="./usuario_blanco.jpg"  class="mt-2 ms-1" width="70" height="70">
-                <div class="d-flex flex-column mt-3">
-                  <span class="dato-cedula fs-3 " >1123446</span>
-                  <span class="dato-nombre ">Buenaventura</span>
+                <img src="./usuario.png"  class="mt-2 ms-2" width="40" height="40">
+                <div class="d-flex flex-column mt-1">
+                  <span class="dato-cedula fs-3 ms-2" >1123446</span>
+                  <span class="dato-nombre ms-3">Buenaventura</span>
                 </div>
               </div>
               <div>
@@ -223,16 +217,16 @@
                       <h5 class="mt-1 ms-1 fw-bold registro-text">REGISTRO INFORMACIÓN</h5>
                       <h5 class=" fw-bold titanes-text">TITÁNES</h5>
                     </div>
-                    <div class="col-md-9 mt-2">
+                    <div class="col-md-9 mt-2 formulario_usuario">
                       <form id="formulario_usuario ">
                         <div class="row">
                           <div class="col-md-12">
                             <div class="d-flex flex-column  mb-3">
-                              <span class="ms-1 text-muted span-data">Cedula</span>
-                              <div class="d-flex flex-row">
+                              <span class="ms-1  span-data">Cedula</span>
+                              
                                 <input type="text"  class="input-edicion me-1 " autocomplete="off"id="cedula_usuario" name="cedula_usuario">
-                                <span class="span-data">ingrese info sin</span>
-                              </div>
+                                <span class="span-info text-muted">ingrese el dato sin comas ni puntos</span>
+                             
                             </div>
                             
                           </div>
@@ -242,15 +236,15 @@
                             <input type="hidden"  id="id_usuario" name="id_usuario" >
                             
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Cedula</span>
+                              <span class="ms-1  span-data">Nombres</span>
                               <input type="text"  class="input-edicion me-4 " autocomplete="off"id="cedula_usuario" name="cedula_usuario">
                             </div>
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Nombres</span>
+                              <span class="ms-1 span-data">Apellidos</span>
                             <input type="text"  class="input-edicion me-4" autocomplete="off" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
                             </div>
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Apellidos</span>
+                              <span class="ms-1 span-data">Email</span>
                             <input type="text"  class="input-edicion me-5" id="apellidos_usuario" name="apellidos_usuario">
                             </div>
                           </div>
@@ -260,24 +254,15 @@
                           <div class="col-md-12 d-flex flex-row">
                             <input type="hidden"  id="id_usuario" name="id_usuario" >
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Teléfono</span>
+                              <span class="ms-1  span-data">Teléfono</span>
                               <input type="text"  class="input-edicion me-4 "  id="cedula_usuario" name="cedula_usuario">
                             </div>
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Email</span>
+                              <span class="ms-1 span-data">Dirección</span>
                             <input type="text"  class="input-edicion me-4" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
                             </div>
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Dirección</span>
-                            <input type="text"  class="input-edicion me-4" id="apellidos_usuario" name="apellidos_usuario">
-                            </div>
-                          </div>
-                         </div>
-                         <div class="row mt-3">
-                          <div class="col-md-12 d-flex flex-row">
-                           
-                            <div class="d-flex flex-column">
-                              <span class=" text-muted span-data">Cargo</span>
+                              <span class="  span-data">Cargo</span>
                               <div class="col-md-12  ">
                                    <select name="cargo" class="input-edicion me-4" id="cargo">
                                     <option value="1">Administrador</option>
@@ -286,30 +271,38 @@
                                    </select>
                               </div>
                             </div>
+                          </div>
+                         </div>
+                         <div class="row mt-3">
+                          <div class="col-md-12 d-flex flex-row">
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Departamento</span>
+                              <span class="ms-1  span-data">Departamento</span>
                             <input type="text"  class="input-edicion me-4" autocomplete="off" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
                             </div>
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Ciudad</span>
-                            <input type="text"  class="input-edicion me-4" autocomplete="off" id="apellidos_usuario" name="apellidos_usuario">
+                              <span class="ms-1  span-data">Ciudad</span>
+                            <input type="text"  class="input-edicion me-4" autocomplete="off" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1  span-data">Punto de Venta</span>
+                            <input type="text"  class="input-edicion me-4" autocomplete="off" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
                             </div>
                           </div>
                          </div>
-                          <div class="row mt-3">
+                         <!--  <div class="row mt-3">
                           <div class="col-md-12 d-flex flex-row">
                             <input type="hidden"  id="id_usuario" name="id_usuario" >
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Teléfono</span>
+                              <span class="ms-1  span-data">Supervisor</span>
                               <input type="text"  class="input-edicion me-4 "  id="cedula_usuario" name="cedula_usuario">
                             </div>
                             <div class="d-flex flex-column">
-                              <span class="ms-1 text-muted span-data">Email</span>
+                              <span class="ms-1  span-data">Email</span>
                             <input type="text"  class="input-edicion me-3" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
                             </div>
                           
                           </div>
-                         </div>
+                         </div> -->
                         <div class="col-md-11 d-flex justify-content-end">
                           <button type="submit" class="button-participante me-5 mt-3" >Guardar</button>
                         </div>

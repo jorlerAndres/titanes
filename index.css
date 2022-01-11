@@ -2,6 +2,11 @@
     margin: 0px;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fuentes/Montserrat-Bold.ttf");
+  
+} 
   
   .contenedor{
 
@@ -202,6 +207,7 @@
   border-radius: 20px;
   box-shadow: 0px 0px 10px 1px rgb(248, 246, 246);
   height: 1000px;
+  border:1px solid rgb(221, 219, 219)
 }
 .tarjeta-participante{
 
@@ -217,6 +223,12 @@
 }
 .contenedor-header{
   
+}
+.monserrat-text{
+  font-family: "Montserrat";
+}
+.fecha-participante{
+  line-height: 0.1;
 }
 .busqueda-nombre{
 
@@ -254,11 +266,24 @@
   margin-left: 1rem;
   
 }
+.distribuidora-participante{
+  width: 330px;
+  height: 50px;
+  background-color:rgb(253, 252, 252); 
+  margin-top:45px; 
+  margin-bottom:10px; 
+  border-radius:20px;
+  display: flex;
+  justify-content: center;
+  border:1px rgb(190, 189, 189) solid;
+  text-align: center;
+
+}
 
 /*informacion especifica participante*/
 .contenedor-datos-participante{
    width: 16rem;
-   background-color: #f1f3f1;
+   background-color: #fcfcfc;
    height: 400px;
    border-radius: 15px;
    box-shadow: 0 0 15px 1px rgb(208, 209, 208);
@@ -329,11 +354,11 @@
 .input-edicion{
 
   outline: none;
-  border:none;
+  border:1px solid rgb(185, 184, 184);
  /*  border-bottom: 1px solid rgb(3, 184, 3); */
   background-color: white;
  /*  text-align: center; */
-  box-shadow: 0px 0px 9px 1px rgb(119, 118, 118);
+   box-shadow: 0px 0px 9px 1px rgb(196, 195, 195); 
   border-radius: 2px;
   color: #909190;
   font-size: 14px;
@@ -342,27 +367,44 @@
   
  
 }
+.input-edicion:hover{
 
+  border:1px solid rgb(133, 132, 132);
+}
 .dato-direccion{
   border-bottom: 3px solid green;
   width: 150px;
 }
 .modal-content{
   background-image: url("./pared.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+  
 }
+/* .modal-content:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(230, 225, 225, 0.6);
+} */
 .modal-efect-header{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(187, 184, 184);
 }
 .titulo-modal-datos{
   color: #4e4d4c;
 }
 .cabecera-modal-datos{
 
-  background-color: rgba(119, 117, 117, 0.151);
+  background-color: rgba(104, 103, 103, 0.151);
    height: 10px;
 }
 .registro-informacion-text{
-  background: linear-gradient(to right,rgb(138, 137, 137),rgb(236, 235, 235));
+  background: linear-gradient(to right,rgb(75, 74, 74),rgb(236, 235, 235));
   -webkit-background-clip: text;
   color: transparent;  
   opacity: 1;
@@ -389,4 +431,14 @@
 }
 .span-data{
   font-size: 14px;
+  color: #363636;
+  text-shadow: 2px 2px 5px rgb(216, 215, 215);
+}
+.span-info{
+  font-size: 11px;
+  color: #5c5b5b;
+  
+}
+.formulario_usuario{
+
 }
