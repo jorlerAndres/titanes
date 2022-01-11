@@ -118,8 +118,8 @@
                         <h6 class="ms-3 card-subtitle mb-2 text-muted">1112323222</h6>
                       </div>
                       <h6 class="card-subtitle mb-2 mt-3 ms-5 text-muted ciudad-participante">Cali</h6>
-                    <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text to</p>
-                    <button class="ms-5 mt-3 editar-participante" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
+                    <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text</p>
+                    <button class="ms-5 mt-3 editar-participante"  onclick="abrirModal()">Editar</button>
                     
                     </div>
                     
@@ -138,7 +138,7 @@
                     <h6 class="ms-3 card-subtitle mb-2 text-muted">1112323222</h6>
                       </div>
                       <h6 class="card-subtitle mb-2 mt-3 ms-5 text-muted ciudad-participante">Bua</h6>
-                    <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text to</p>
+                    <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text</p>
                     <button class="ms-5 mt-3 editar-participante">Editar</button>
                     </div>
                     
@@ -162,8 +162,8 @@
                         <h6 class="ms-3 card-subtitle mb-2 text-muted">1112323222</h6>
                       </div>
                       <h6 class="card-subtitle mb-2 mt-3 ms-5 text-muted ciudad-participante">Buenaventura</h6>
-                      <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example text to</p>
-                      <button class="ms-5 mt-3 editar-participante " data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
+                      <p class="card-text ms-4 mt-3 distribuidora-participante">Some quick example tex</p>
+                      <button class="ms-5 mt-3 editar-participante "  onclick="abrirModal()">Editar</button>
                     </div>
                     
                    <!-- <button class="inactivar-participante">Inactivar</button> -->
@@ -211,48 +211,91 @@
           
           <!-- Modal -->
           <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
               <div class="modal-content ">
-                
+                <div class="modal-header cabecera-modal-datos" >
+                  <h6 class="modal-title titulo-modal-datos">Formulario Participantes</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body   modal-efect-body">
                   <div class="row">
-                    <div class="col-md-4">
-
+                    <div class="col-md-3 registro-informacion-text" id="registro_informacion_text">
+                      <h5 class="mt-1 ms-1 fw-bold registro-text">REGISTRO INFORMACIÓN</h5>
+                      <h5 class=" fw-bold titanes-text">TITÁNES</h5>
                     </div>
-                    <div class="col-md-8 mt-3">
+                    <div class="col-md-9 mt-2">
                       <form id="formulario_usuario ">
                         <div class="row">
-                          <div class="col-md-12 mb-3 ms-4">
+                          <div class="col-md-12 d-flex flex-row">
                             <input type="hidden"  id="id_usuario" name="id_usuario" >
-                            <input type="text"  class="input-edicion me-5 " placeholder="Cedula" id="cedula_usuario" name="apellidos_usuario">
-                            <input type="text"  class="input-edicion me-5"  placeholder="Nombre" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
-                            <input type="text"  class="input-edicion me-5"  placeholder="Apellido" id="apellidos_usuario" name="apellidos_usuario">
+                            <div class="d-flex flex-column ">
+                              <span class="ms-1 text-muted">Cedula</span>
+                              <input type="text"  class="input-edicion me-4 " autocomplete="off"id="cedula_usuario" name="cedula_usuario">
                             </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Nombres</span>
+                            <input type="text"  class="input-edicion me-4" autocomplete="off" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Apellidos</span>
+                            <input type="text"  class="input-edicion me-5" id="apellidos_usuario" name="apellidos_usuario">
+                            </div>
+                          </div>
                          </div>
     
-                         <div class="row mt-4">
-                          <div class="col-md-12 mb-3 ms-4">
+                         <div class="row mt-3">
+                          <div class="col-md-12 d-flex flex-row">
                             <input type="hidden"  id="id_usuario" name="id_usuario" >
-                            <input type="text"  class="input-edicion me-5 " placeholder="Cedula" id="cedula_usuario" name="apellidos_usuario">
-                            <input type="text"  class="input-edicion me-5"  placeholder="Nombre" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
-                            <input type="text"  class="input-edicion me-5"  placeholder="Apellido" id="apellidos_usuario" name="apellidos_usuario">
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Teléfono</span>
+                              <input type="text"  class="input-edicion me-4 "  id="cedula_usuario" name="cedula_usuario">
                             </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Email</span>
+                            <input type="text"  class="input-edicion me-4" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Dirección</span>
+                            <input type="text"  class="input-edicion me-4" id="apellidos_usuario" name="apellidos_usuario">
+                            </div>
+                          </div>
                          </div>
-    
-                         <div class="row mt-4">
-                          <div class="col-md-12 mb-3 ms-4">
-                            <input type="hidden"  id="id_usuario me-5" name="id_usuario" >
-    
+                         <div class="row mt-3">
+                          <div class="col-md-12 d-flex flex-row">
                            
-                              <input type="text"  class="input-edicion me-5" placeholder="Cedula" id="cedula_usuario" name="apellidos_usuario">
-    
-                             
-                              <input type="text"  class="input-edicion me-5"  placeholder="Nombre" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
-                         
-                              
-                             
-                              <input type="text"  class="input-edicion me-3"  placeholder="Apellido" id="apellidos_usuario" name="apellidos_usuario">
+                            <div class="d-flex flex-column">
+                              <span class=" text-muted">Cargo</span>
+                              <div class="col-md-12  ">
+                                   <select name="cargo" class="input-edicion me-4" id="cargo">
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Supervisor</option>
+                                    <option value="3">Auditor</option>
+                                   </select>
+                              </div>
                             </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Departamento</span>
+                            <input type="text"  class="input-edicion me-4" autocomplete="off" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Ciudad</span>
+                            <input type="text"  class="input-edicion me-4" autocomplete="off" id="apellidos_usuario" name="apellidos_usuario">
+                            </div>
+                          </div>
+                         </div>
+                         <div class="row mt-3">
+                          <div class="col-md-12 d-flex flex-row">
+                            <input type="hidden"  id="id_usuario" name="id_usuario" >
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Teléfono</span>
+                              <input type="text"  class="input-edicion me-4 "  id="cedula_usuario" name="cedula_usuario">
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="ms-1 text-muted">Email</span>
+                            <input type="text"  class="input-edicion me-3" id="nombres_usuario" name="nombres_usuario" aria-describedby="usuario">
+                            </div>
+                          
+                          </div>
                          </div>
                         <div class="col-md-11 d-flex justify-content-end">
                           <button type="submit" class="button-participante me-5 mt-3" >Guardar</button>

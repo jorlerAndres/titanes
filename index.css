@@ -275,6 +275,16 @@
   animation: moveFromRight 300ms ease-in-out;
 }
 
+.movement_from_top{
+  opacity: 1;
+  -webkit-animation: moveFromtop 300ms ease-in-out;
+  -moz-animation: moveFromtop 300ms ease-in-out;
+  -ms-animation: moveFromtop 400ms ease-in-out;
+  -o-animation: moveFromtop 400ms ease-in-out;
+  animation: moveFromtop 400ms ease-in-out;
+}
+
+
 
 @-webkit-keyframes moveFromRight {
   from {
@@ -295,6 +305,25 @@
   }
 }
 
+@-webkit-keyframes moveFromtop {
+  from {
+      opacity: 0;
+      -webkit-transform: translateY(-200%);
+      -moz-transform: translateY(-200%);
+      -ms-transform: translateY(-200%);
+      -o-transform: translateY(-200%);
+      transform: translateY(-200%);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+}
+
 /*edicion input*/
 
 .input-edicion{
@@ -309,13 +338,14 @@
   color: #909190;
   font-size: 14px;
   padding-left: 5px;
+  width: 150px;
   
  
 }
 
 .dato-direccion{
   border-bottom: 3px solid green;
-  width: 100px;
+  width: 150px;
 }
 .modal-content{
   background-image: url("./pared.jpg");
@@ -323,6 +353,37 @@
 .modal-efect-header{
   background-color: rgb(255, 255, 255);
 }
-.modal-title{
-  color: #ff915e;
+.titulo-modal-datos{
+  color: #4e4d4c;
+}
+.cabecera-modal-datos{
+
+  background-color: rgba(119, 117, 117, 0.151);
+   height: 10px;
+}
+.registro-informacion-text{
+  background: linear-gradient(to right,rgb(138, 137, 137),rgb(236, 235, 235));
+  -webkit-background-clip: text;
+  color: transparent;  
+  opacity: 1;
+  transition: all 1s;
+  
+ 
+}
+.titanes-text{
+  margin-left: 80px; 
+  color:rgb(247, 173, 14);
+  text-shadow: 20px 10px rgb(216, 214, 214);
+  line-height: 10%;
+  /* text-shadow: 2px 2px 5px rgba(243, 150, 10, 0.514); */
+}
+.registro-text{
+    
+  /* text-shadow: 2px 2px 5px rgba(131, 247, 108, 0.514); */
+}
+#cargo{
+  width: 150px;
+}
+.registro-informacion-visible{
+  opacity: 1;
 }
