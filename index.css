@@ -387,3 +387,6 @@
 .registro-informacion-visible{
   opacity: 1;
 }
+.span-data{
+  font-size: 14px;
+}
