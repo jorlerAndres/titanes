@@ -1,0 +1,54 @@
+<script src="{{base_url}}/scripts/lib/bootstrap.bundle.min.js"></script>
+<footer class=" container-fluid blue-800 text-white fs-6">
+  <div class="container w-75 pb-2 position-relative"> 
+    <div class="p-4 position-absolute top-50 end-0 text-end small">
+      <img src="{{base_url}}/assets/imagenes/logo_2.png" alt="" width="150">
+    </div>
+    <div class="row p-4 row-cols-3">
+      <div class="col-4 col-md">
+        <h6 class="text-footer-bdf">Socios BDF</h6>
+        <ul class="list-unstyled text-small">
+          {% for item in accesos %}
+            <li class="px-2">
+              <a class="text-decoration-none text-white {{ vista == item.NOMBRE ? ' active' : '' }}" aria-current="page" href="{{item.RUTA}}">{{item.NOMBRE}}</a>
+            </li>
+          {% endfor %}  
+          <li class="mb-1 px-2"><a class="text-white text-decoration-none" target="_blank" href="/assets/pdf/2021/Terminos_y_Condiciones.pdf">Terminos y Condiciones</a></li>
+        <!-- Menu Mi perfil -->
+        </ul>
+      </div>
+      <div class="col-4 col-md">
+        <h6 class="text-footer-bdf">Personas</h6>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1 px-2">Bogotá (1) 745 22 78</li>
+          <li class="mb-1 px-2">Cali (2) 695 90 57</li>
+          <li class="mb-1 px-2">Medellín (4) 605 22 65</li>
+          <li class="mb-1 px-2">Bucaramanga (6) 697 34 47</li>
+          <li class="mb-1 px-2">Barranquilla (5) 385 51 37 </li>
+          <li class="mt-2 px-2"><strong>Marca la opción 4.</strong></li>
+        </ul>
+      </div>
+      <div class="col-4 col-md">
+        <h6 class="text-footer-bdf">Horario Atención:</h6>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1 px-2">Lunes - Viernes 8 a.m. - 5 p.m.</li>
+          <li class="mb-1 px-2">Sábados 8 a.m. - 12 m.</li>
+          <li class="mb-1 px-2">info@sociosbdf.com</li>
+        </ul>
+      </div>
+    </div>
+   
+    <div class="footer-copyright">
+      <div>
+        <hr>
+				© 2021 Desarrollado por: Proimpo S.A.S.
+			</div>
+			<div class="pb-2">
+				<img src="https://www.proimpo.com/proweb/images/logo_proimpo.png" alt="Proimpo" style="max-width:140px;" />
+			</div>
+    </div>
+  </div>
+</footer>      
+
+</body>
+</html>
