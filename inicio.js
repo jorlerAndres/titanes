@@ -17,19 +17,21 @@ window.addEventListener('scroll',function(){
     let tamano=window.innerHeight;
     if(posicionMensaje < tamano) {
          mensajeUpfield.classList.add('movement_from_bottom');
+        
          setTimeout(function(){
              imagenesFechas.classList.add('movement_from_bottom')
-             imagenesFechas.classList.remove('imagenes-display');
+             imagenesFechas.classList.remove('display');
             }, 1000); 
         console.log('posicionMensaje');
     }
 
     let posicionTacticos=tituloTacticos.getBoundingClientRect().top;
     if(posicionTacticos < tamano) {
-        tituloTacticos.classList.add('movement_from_bottom');
+        
         setTimeout(function(){
+            tituloTacticos.classList.add('movement_from_bottom');
             textTacticos.classList.add('movement_from_bottom')
-            textTacticos.style.opacity="1";
+            tituloTacticos.classList.remove('display');
            }, 1000); 
        console.log('posicionMensaje');
    }

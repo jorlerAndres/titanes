@@ -576,12 +576,22 @@
 .mensaje-upfield{
 
   margin-top: 100px;
-  margin-left: 150px;
-  font-size: 60px;
-  font-family: 'Signika-Bold';
-  color: #363636;
+  margin-left: 240px;
   opacity: 0;
-  transition: all 50s;
+  transition: all 5s;
+  line-height: 1;
+  
+}
+.subtitulo-mensaje-upfield{
+  margin-left: 190px;
+  font-size: 18px;
+ 
+}
+.titulo-mensaje-upfield{
+ 
+  font-family: 'Signika-Bold';
+  font-size: 50px;
+  color: #363636;
 }
 #imagenes_fechas{
  
@@ -608,20 +618,23 @@
   font-size: 50px;
   font-family: 'Signika-Bold';
   color: #363636;
+  transition: all 9s;
 }
 .text-tacticos{
  /*  font-family: 'Signika-Bold'; */
   color: #363636;
   margin-left: 50px;
+  transition: all 9s;
+  opacity: 0;
 }
 @-webkit-keyframes moveFrombottom {
   from {
       opacity: 0;
-      -webkit-transform: translateY(90%);
-      -moz-transform: translateY(90%);
-      -ms-transform: translateY(90%);
-      -o-transform: translateY(90%);
-      transform: translateY(90%);
+      -webkit-transform: translateY(60%);
+      -moz-transform: translateY(60%);
+      -ms-transform: translateY(60%);
+      -o-transform: translateY(60%);
+      transform: translateY(60%);
   }
   to {
       opacity: 1;
@@ -634,17 +647,10 @@
 }
 .movement_from_bottom{
   opacity: 1;
-  -webkit-animation: moveFrombottom 3100ms ease-in-out;
+  -webkit-animation: moveFrombottom 900ms ease-in-out;
  /*  -moz-animation: moveFrombottom 300ms ease-in-out;
   -ms-animation: moveFrombottom 300ms ease-in-out;
   -o-animation: moveFrombottom 300ms ease-in-out;
   animation: moveFrombottom 300ms ease-in-out; */
 }
-.titulo-tacticos{
-  opacity: 0;
-   transition: all 9s;
-}
-.text-tacticos{
-  opacity:0;
-   transition: all 9s;
-}
+
