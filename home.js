@@ -25,3 +25,4 @@ function abrirModal(){
   setTimeout(function(){registroInformacionText.classList.add('movement_from_top')}, 100); 
   
 }
+

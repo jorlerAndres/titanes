@@ -93,17 +93,28 @@
         </div>
         <div class="row mt-5">
           <div class="col-md-9 contenedor-participante">
-            <div class="contenedor-header d-flex flex-row justify-content-end">
-              
-              <input class="busqueda-nombre mt-4 ps-2" placeholder="Cedula" type="text"/>
-              <input type="month" name="fecha_registro" class="mt-4 ms-2 ps-2 text-muted busqueda-nombre" id="fecha_registro" style="height: 30px;"/>
-            </div>
-            <hr>
+           
+              <div class="contenedor-header  d-flex bd-highlight mb-3">
+                <div class=" mt-3 me-auto p-2 bd-highlight contenedor-cabecera">
+                  <p class="datos-participantes-text fw-bold "> DATOS PARTICIPANTES</p>
+                  <p class="datos-participantes-subtext text-muted">Click en cada fila para información detallada</p>
+                </div>
+                <img src="./filtro.png" width="15px" class="mt-4" height="15px">
+                <div class="p-2 bd-highlight">  <input class="busqueda-nombre mt-4 ps-2" placeholder="Cedula" type="text"/></div>
+                <div class="p-2 bd-highlight"> <input type="month" name="fecha_registro" class="mt-4 ms-2 ps-2 text-muted busqueda-nombre" id="fecha_registro" style="height: 30px;"/></div>
+              </div>
+           
             <div class="contenedor-body">
               <div>
-                <div class="titulo-campos">
-                  <p>iuu</p>
+                <div class="titulo-campos mt-4">
+                  <span class="titulo-fecha  titulo-font fw-bold ms-3">Fecha Creación</span>
+                  <span class="titulo-nombre titulo-font fw-bold">Participante</span>
+                  <span class="titulo-ciudad titulo-font fw-bold">Ciudad</span>
+                  <span class="titulo-distribuidora titulo-font fw-bold">Distribuidora</span>
+                  <span class="titulo-accion titulo-font fw-bold">Accion</span>
+
                 </div>
+                
                  <!-- 1 -->
                 <div class="tarjeta-participante mt-2"  id='primer' >
                   <div class="card-body">
@@ -119,8 +130,41 @@
                       </div>
                      
                       <div class="d-flex flex-column nombre-participante">
-                        <p class=" ms-3 card-title nombre-apellido-participante">David Ruales</p>
-                        <p class="ms-3 card-subtitle mb-2 text-muted cedula-participante">1112323222</p>
+                        <p class="card-title nombre-apellido-participante">David Ruales</p>
+                        <p class="card-subtitle mb-2 text-muted cedula-participante">1112323222</p>
+                      </div>
+                      <div class="d-flex flex-column mt-1 ubicacion-participante">
+                        <p class="card-subtitle mb-2 ms-5  ciudad-participante">Cali</p>
+                        <p class="card-subtitle mb-2  ms-5 text-muted departamento-participante">Valle del Cauca</p>
+                      </div>
+                      <div class="distribuidora-participante">
+                        <div class="d-flex flex-column">
+                          <h6 class="card-subtitle mb-2 mt-1">Farmacia la Favorita</h6>
+                          <p class="card-subtitle mb-1   text-muted nit-distribuidora">Nit.12321222</p>
+                         </div>
+                      </div>
+                      <button class="ms-5 mt-2 editar-participante"  onclick="abrirModal()">Editar</button>
+                    </div>
+                  </div>
+                </div>
+                 
+                <!-- 3 -->
+                <div class="tarjeta-participante mt-2"  id='primer' >
+                  <div class="card-body">
+                    <div class="d-flex flex-row ">
+                      <div id="fecha-participante">
+                        <div  class="d-flex flex-row">
+                          <span  class="monserrat-text ms-1"> 23</span>
+                          <div class="mes-ano-participante  mt-1 d-flex flex-column">
+                            <span class=" ms-1 mes-participante">Diciembre</span>
+                            <span class=" ms-3 ano-participante" >2021</span>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="d-flex flex-column nombre-participante">
+                        <p class="card-title nombre-apellido-participante">David Ruales</p>
+                        <p class="card-subtitle mb-2 text-muted cedula-participante">1112323222</p>
                       </div>
                       <div class="d-flex flex-column mt-1 ubicacion-participante">
                         <p class="card-subtitle mb-2 ms-5  ciudad-participante">Cali</p>
@@ -132,80 +176,11 @@
                           <p class="card-subtitle mb-2   text-muted nit-distribuidora">Nit.12321222</p>
                          </div>
                       </div>
-                      
-                    
-                    <button class="ms-5 mt-3 editar-participante"  onclick="abrirModal()">Editar</button>
-                    
+                      <button class="ms-5 mt-3 editar-participante"  onclick="abrirModal()">Editar</button>
                     </div>
-                    
-                   <!-- <button class="inactivar-participante">Inactivar</button> -->
                   </div>
                 </div>
-                 <!-- 2 -->
-                 <div class="tarjeta-participante mt-2" >
-                  <div class="card-body">
-                    <div class="d-flex flex-row">
-                      <div id="fecha-participante" class="d-flex flex-row">
-                        <span  class="monserrat-text ms-1"> 23</span>
-                        <div class="mes-ano-participante  mt-1">
-                          <span class=" ms-1 mes-participante">Diciembre</span>
-                          <span class=" ms-3 ano-participante" >2021</span>
-                        </div>
-                      </div>
-                        
-                      <div class="d-flex flex-column nombre-participante">
-                        <p class=" ms-3 card-title nombre-apellido-participante">Gustavo fernandez</p>
-                    <p class="ms-3 card-subtitle mb-2 text-muted cedula-participante">1112323222</p>
-                      </div>
-                      <div class="d-flex flex-column mt-1 ubicacion-participante">
-                        <p class="card-subtitle mb-2 ms-5 ciudad-participante">Palmira</p>
-                        <p class="card-subtitle mb-2  ms-5 text-muted departamento-participante">Valle del Cauca</p>
-                     
-                      </div>
-                      <div class="d-flex flex-column distribuidora-participante">
-                        <h6 class="card-subtitle mb-2">Distribuidora</h6>
-                        <h7 class="card-subtitle mb-2   text-muted">Farmacia la Favorita</h7>
-                       </div>
-                    <button class="ms-5 mt-3 editar-participante">Editar</button>
-                    </div>
-                    
-                   <!-- <button class="inactivar-participante">Inactivar</button> -->
-                  </div>
-                </div>
-                <!-- 2 -->
-
                  <!-- 3 -->
-                 <div class="tarjeta-participante mt-2">
-                  <div class="card-body">
-                    <div class="d-flex flex-row">
-                      <div id="fecha-participante" class="d-flex flex-row">
-                        <span  class="monserrat-text ms-1"> 14</span>
-                        <div class="mes-ano-participante  mt-1">
-                          <span class=" ms-1 mes-participante">Febrero</span>
-                          <span class=" ms-3 ano-participante" >2021</span>
-                        </div>
-                      </div>
-                      
-                      <div class="d-flex flex-column nombre-participante">
-                        <h5 class=" ms-3 card-title">Jorge Salcedo</h5>
-                        <h6 class="ms-3 card-subtitle mb-2 text-muted">1112323222</h6>
-                      </div>
-                      <div class="d-flex flex-column mt-1 ubicacion-participante">
-                        <h5 class="card-subtitle mb-2 ms-5  ciudad-participante">Buenaventuta</h5>
-                        <h7 class="card-subtitle mb-2  ms-5 text-muted">Valle del Cauca</h7>
-                      </div>
-                      <div class="d-flex flex-column distribuidora-participante">
-                        <h6 class="card-subtitle mb-2">Distribuidora</h6>
-                        <h7 class="card-subtitle mb-2   text-muted">Farmacia la Favorita</h7>
-                       </div>
-                      <button class="ms-5 mt-3 editar-participante "  onclick="abrirModal()">Editar</button>
-                    </div>
-                    
-                   <!-- <button class="inactivar-participante">Inactivar</button> -->
-                  </div>
-                </div>
-                <!-- 3 -->
-
               </div>
             </div>
              

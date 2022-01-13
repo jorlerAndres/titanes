@@ -19,7 +19,14 @@
   src: url("./assets/fuentes/OpenSans-Light.ttf");
   
 } 
+
+/*fuente inicio*/
   
+@font-face {
+  font-family: "Signika-Bold";
+  src: url("./assets/fuentes/Signika-Bold.ttf");
+  
+} 
   .contenedor{
 
     width: 100%;
@@ -154,11 +161,20 @@
       font-size: 14px;;
      } 
      .nombre-participante{
-      max-width: 100px;
+      max-width: 70px;
+      margin-left: 2px;
       
      } 
      .ciudad-participante{
-       font-size: 12px;
+       font-size: 13px;
+     }
+     .ubicacion-participante{
+      max-width: 90px;
+      margin-top:35px;
+     }
+     .departamento-participante{
+      display: none;
+      
      }
   }
 
@@ -199,6 +215,9 @@
   color: rgb(34, 33, 33);
  
 }
+.contenedor-cabecera{
+  line-height: 0.1;
+}
 .editar-participante{
   border:none;
   border-radius: 5px;
@@ -225,15 +244,17 @@
 .tarjeta-participante{
 
   background-color: rgb(252, 252, 252);
-  border-radius: 20px;
+  border-radius: 10px;
   color: rgb(36, 35, 35);
   border-bottom: 1px solid rgb(202, 200, 200);
-  box-shadow: 0px 0px 9px 1px rgba(32, 32, 32, 0.185);
+  box-shadow: 0px 0px 9px 1px rgba(19, 19, 19, 0.185);
   max-width: 800px;
-  min-width: 100px
+  min-width: 100px;
+  max-height: 80px;
+  cursor: pointer;
 }
 .tarjeta-participante:hover{
-  box-shadow: 0px 0px 9px 1px rgba(1, 95, 1, 0.185);
+  box-shadow: 0px 0px 9px 1px rgb(141, 141, 141);
 }
 .contenedor-header{
   
@@ -276,19 +297,61 @@
   border-radius: 6px;
   border:none;
   background-color: rgb(255, 255, 255);
-  border:1px solid rgb(233, 230, 230);
+  border:1px solid rgb(219, 218, 218);
   outline: none;
+  box-shadow: 0 0 7px 1px rgb(236, 235, 235);
 }
 .busqueda-nombre:focus{
 
   border: 1px solid green
 }
+.titulo-campos{
+  width: 100%;
+  /* background-image: linear-gradient(rgb(134, 133, 133), rgb(83, 83, 83)); */
+  border-bottom: 1px solid rgb(185, 185, 185);
+  border-top: 1px solid rgb(202, 200, 200);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  /* border-radius: 7px; */
+}
+.titulo-fecha{
+}
+.titulo-nombre{
+  margin-left: 60px;
+}
+.titulo-ciudad{
+  margin-left: 120px;
+}
+.titulo-distribuidora{
+  
+  margin-left: 160px;
+}
+.titulo-accion{
+  
+  margin-left: 100px;
+}
+  .titulo-font{
+    font-size: 12px;
+    /* color: rgb(194, 191, 191); */
+    color: rgb(133, 131, 131);
+  }
 .participantes-text{
   background: linear-gradient(rgb(32, 32, 32),rgb(124, 123, 123));
   -webkit-background-clip: text;
   color: transparent;  
 }
-
+.datos-participantes-text{
+  background: linear-gradient(rgb(32, 32, 32),rgb(124, 123, 123));
+  -webkit-background-clip: text;
+  color: black;  
+  font-size: 12px;
+}
+.datos-participantes-subtext{
+  background: linear-gradient(rgb(32, 32, 32),rgb(124, 123, 123));
+  -webkit-background-clip: text;
+  color: black;  
+  font-size: 10px;
+}
 .titan-text{
   background: linear-gradient(rgb(32, 32, 32),rgb(124, 123, 123));
   -webkit-background-clip: text;
@@ -301,6 +364,7 @@
   width: 300px;
   margin-left: 1rem;
   line-height: 1;
+  padding-left: 10px;
 }
 #fecha-participante{
 
@@ -323,7 +387,7 @@
 }
 .distribuidora-participante{
   width: 330px;
-  height: 50px;
+  height: 42px;
   background-color:rgb(253, 252, 252); 
   /* margin-top:45px; */ 
   margin-bottom:10px; 
@@ -499,13 +563,88 @@
 .formulario_usuario{
 
 }
-.titulo-campos{
-  width: 100%;
-  background-color: #e7ebe7;
-}
+
 .footer{
   background-image: linear-gradient(320deg,green,black);
 }
 .nit-distribuidora{
   font-size: 12px;
+}
+/*inicio*/
+
+
+.mensaje-upfield{
+
+  margin-top: 100px;
+  margin-left: 150px;
+  font-size: 60px;
+  font-family: 'Signika-Bold';
+  color: #363636;
+  opacity: 0;
+  transition: all 50s;
+}
+#imagenes_fechas{
+ 
+   transition: all 9s; 
+}
+.display{
+  visibility: hidden;
+}
+.logo-upfield{
+  position: relative;
+  left: 35%;
+}
+.imagen1{
+  
+  text-align: center;
+}
+.imagen2{
+ 
+  text-align: center;
+}
+.titulo-tacticos{
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 50px;
+  font-family: 'Signika-Bold';
+  color: #363636;
+}
+.text-tacticos{
+ /*  font-family: 'Signika-Bold'; */
+  color: #363636;
+  margin-left: 50px;
+}
+@-webkit-keyframes moveFrombottom {
+  from {
+      opacity: 0;
+      -webkit-transform: translateY(90%);
+      -moz-transform: translateY(90%);
+      -ms-transform: translateY(90%);
+      -o-transform: translateY(90%);
+      transform: translateY(90%);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+}
+.movement_from_bottom{
+  opacity: 1;
+  -webkit-animation: moveFrombottom 3100ms ease-in-out;
+ /*  -moz-animation: moveFrombottom 300ms ease-in-out;
+  -ms-animation: moveFrombottom 300ms ease-in-out;
+  -o-animation: moveFrombottom 300ms ease-in-out;
+  animation: moveFrombottom 300ms ease-in-out; */
+}
+.titulo-tacticos{
+  opacity: 0;
+   transition: all 9s;
+}
+.text-tacticos{
+  opacity:0;
+   transition: all 9s;
 }
