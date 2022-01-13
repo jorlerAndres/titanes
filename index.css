@@ -27,6 +27,12 @@
   src: url("./assets/fuentes/Signika-Bold.ttf");
   
 } 
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fuentes/Inter-VariableFont_slnt\,wght.ttf");
+  
+} 
+
   .contenedor{
 
     width: 100%;
@@ -572,7 +578,23 @@
 }
 /*inicio*/
 
+.text-image{
 
+ 
+}
+.primer-row{
+  text-align: center;
+}
+.segundo-row{
+  padding-left:200px;
+  padding-right: 300px;
+  padding-top: 100px;
+}
+.titulo-plataforma{
+  font-family: 'Signika-Bold';
+  font-size: 45px;
+  color: #363636;
+}
 .mensaje-upfield{
 
   margin-top: 100px;
@@ -583,14 +605,15 @@
   
 }
 .subtitulo-mensaje-upfield{
-  margin-left: 190px;
+  margin-left: 80px;
   font-size: 18px;
+  font-family: 'Inter';
  
 }
 .titulo-mensaje-upfield{
  
   font-family: 'Signika-Bold';
-  font-size: 50px;
+  font-size: 40px;
   color: #363636;
 }
 #imagenes_fechas{
@@ -601,8 +624,8 @@
   visibility: hidden;
 }
 .logo-upfield{
-  position: relative;
-  left: 35%;
+  /* position: relative;
+  left: 35%; */
 }
 .imagen1{
   

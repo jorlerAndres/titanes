@@ -32,7 +32,7 @@ window.addEventListener('scroll',function(){
             tituloTacticos.classList.add('movement_from_bottom');
             textTacticos.classList.add('movement_from_bottom')
             tituloTacticos.classList.remove('display');
-           }, 1000); 
+           }, 100); 
        console.log('posicionMensaje');
    }
 
